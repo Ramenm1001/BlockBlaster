@@ -1,4 +1,4 @@
-class House_niga:
+class HouseNiga:
     def __init__(self, win, x, y, tall):
         self.win = win
         self.x = x
