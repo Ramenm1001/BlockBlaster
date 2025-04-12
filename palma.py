@@ -8,6 +8,6 @@ class Palma:
 
     def draw(self):
         pygame.draw.rect(self.win,
-                         (170, 100, 15),
+                         (252, 169, 3),
                          (self.x, self.y,
                           20, self.tall))
