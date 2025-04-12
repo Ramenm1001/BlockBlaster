@@ -11,3 +11,7 @@ class Palma:
                          (170, 100, 15),
                          (self.x, self.y,
                           20, self.tall))
+        pygame.draw.rect(self.win,
+                         (0, 200, 15),
+                         (self.x-10, self.y,
+                          50, 20))
