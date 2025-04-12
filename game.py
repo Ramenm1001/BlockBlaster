@@ -4,7 +4,7 @@ from palma import Palma
 
 win = pygame.display.set_mode((500, 500))
 negr = Negr(win, 200, 400, 50)
-
+palma = Palma(win, 250,444,55 )
 
 
 run = True
