@@ -7,7 +7,7 @@ win = pygame.display.set_mode((500, 500))
 negr = Negr(win, 200, 400, 50)
 palma = Palma(win, 250,444,55 )
 
-island = [negr, ]
+island = [negr, palma]
 run = True
 while run:
     for eve in pygame.event.get():
