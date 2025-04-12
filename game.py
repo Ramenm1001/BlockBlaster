@@ -1,35 +1,9 @@
 import pygame
-
-
-class Player:
-    def __init__(self):
-        pass
-
-    def draw(self):
-        pass
-
-    def move(self):
-        pass
-
-    def update(self):
-        pass
-
-
-class Bullet:
-    def __init__(self):
-        pass
-
-    def draw(self):
-        pass
-
-    def move(self):
-        pass
-
-    def update(self):
-        pass
-
+from negr import Negr
+from palma import Palma
 
 win = pygame.display.set_mode((500, 500))
+
 
 run = True
 while run:
