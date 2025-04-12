@@ -12,6 +12,7 @@ house = HouseNigga(win, 290, 460, 100)
 island = [negr, palma, house]
 run = True
 while run:
+    pygame.time.delay(50)
     for eve in pygame.event.get():
         if eve.type == pygame.QUIT:
             run = False
