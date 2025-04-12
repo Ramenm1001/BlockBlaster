@@ -6,6 +6,8 @@ from housefornigga import HouseNigga
 win = pygame.display.set_mode((500, 500))
 negr = Negr(win, 200, 400, 50)
 palma = Palma(win, 250,444,55 )
+house = HouseNigga(win, 500, 900, 100)
+
 
 island = [negr, palma, house]
 run = True
