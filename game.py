@@ -9,7 +9,7 @@ palma = Palma(win, 250,444,55 )
 house = HouseNigga(win, 270, 460, 100)
 
 
-island = [negr, palma]
+island = [negr, palma, house]
 run = True
 while run:
     for eve in pygame.event.get():
