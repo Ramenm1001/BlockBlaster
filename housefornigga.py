@@ -13,6 +13,6 @@ class HouseNigga:
         pygame.draw.rect(self.win, (24, 64, 252), (self.x + 122, self.y + 6, 20, 20))
     def recolor(self):
         pass
-
+        pass
     def update(self):
         self.draw()
