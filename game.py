@@ -4,17 +4,20 @@ from negr import Negr
 from palma import Palma
 from housefornigga import HouseNigga
 from background import draw_background
+from sun import Sun
 from campfire import Fire
 
 win = pygame.display.set_mode((500, 500))
 negr = Negr(win, 200, 400, 50)
 palma = Palma(win, 250, 444, 55 )
 house = HouseNigga(win, 290, 460, 90)
+sun = Sun(win, 400, 50, 50)
 
 fire = Fire(win, 200, 460)
 
 
 island = [negr, palma, house]
+island.append(sun)
 island.append(fire)
 
 
