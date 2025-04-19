@@ -31,7 +31,7 @@ while run:
 
     win.fill((0, 0, 0))
     draw_background(win)
-
+    draw_oblaka(win)
     for some in island:
         some.update()
     pygame.display.update()
