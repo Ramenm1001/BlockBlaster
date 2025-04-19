@@ -1,11 +1,12 @@
 import pygame.draw
-class Palma:
+class Sun:
     def __init__(self, win, x, y, tall):
         self.x = x
         self.y = y
         self.win = win
         self.tall = tall
-        self.color = [252, 169, 3]
+        self.color = [255, 255, 0]
+        self.speed = 1
 
     def draw(self):
         pygame.draw.rect(self.win,
@@ -13,22 +14,18 @@ class Palma:
                          (self.x, self.y,
                           20, self.tall))
         pygame.draw.rect(self.win,
-                         (0, 200, 15),
+                         (255, 200, 15),
                          (self.x-10, self.y,
-                          50, 20))
+                          100, 100))
 
-    def recolor(self):
-        self.color[2] += 1
-    def recolor(self):
-        self.color[2] += 1
-        if self.color[2] == 255:
 
-            self.color[2] = 0
-
+    def cordx(self):
+        self.x -= self.speed
+        if self.x <= 0:
+            self.speed *= -1
+        if self.x + 100 >= 500:
+            self.speed *= -1
 
     def update(self):
         self.draw()
-        self.recolor()
-
-        self.recolor()
-
+        self.cordx()
