@@ -51,20 +51,23 @@ class Part:
         self.color = color
         self.win = win
         self.timer = 50
+        self.size = 5
 
     def draw(self):
         pygame.draw.rect(self.win,
                          self.color,
                          (self.x, self.y,
-                          5, 5))
+                          self.size, self.size))
     def recolor(self):
         for i in range(3):
             self.color[i] -= 1
-            if self.color[i] < 0:
-                self.color[i] = 0
+            if self.color[i] < 150:
+                self.color[i] = 150
+
     def update(self):
         self.draw()
         self.recolor()
         self.timer -= 1
         self.x += random.randint(0, 4) - 2
         self.y -= random.randint(0, 10)
+        self.size += 40 // max(10, self.timer)
