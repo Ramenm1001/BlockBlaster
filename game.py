@@ -6,6 +6,7 @@ from housefornigga import HouseNigga
 from background import draw_background
 from sun import Sun
 from campfire import Fire
+from oblaka import draw_oblaka
 
 win = pygame.display.set_mode((500, 500))
 negr = Negr(win, 200, 400, 50)
