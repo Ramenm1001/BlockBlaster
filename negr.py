@@ -10,12 +10,10 @@ class Negr:
         self.d = 1
 
     def draw(self):
-        self.run()
         pygame.draw.rect(self.win,
                          (170, 100, 15),
                          (self.x, self.y,
                           20, self.tall))
-
 
     def run(self):
         if self.d == 1:
@@ -26,6 +24,9 @@ class Negr:
             self.x -= 1
             if self.x < 0:
                 self.d = 1
+
+    def update(self):
+        self.draw()
 
 
 
