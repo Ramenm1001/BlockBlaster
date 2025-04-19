@@ -19,6 +19,6 @@ while run:
 
     win.fill((0, 0, 0))
     for some in island:
-        some.draw()
+        some.update()
     pygame.display.update()
 pygame.quit()
