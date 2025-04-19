@@ -6,7 +6,7 @@ class Sun:
         self.win = win
         self.tall = tall
         self.color = [255, 255, 0]
-        self.speed = 10
+        self.speed = 1
 
     def draw(self):
         pygame.draw.rect(self.win,
