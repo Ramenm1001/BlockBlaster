@@ -16,6 +16,7 @@ fire = Fire(win, 200, 460)
 island = [negr, palma, house]
 island.append(fire)
 
+
 run = True
 while run:
     pygame.time.delay(50)
