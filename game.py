@@ -2,14 +2,19 @@ import pygame
 from negr import Negr
 from palma import Palma
 from housefornigga import HouseNigga
+from campfire import Fire
 
 win = pygame.display.set_mode((500, 500))
 negr = Negr(win, 200, 400, 50)
 palma = Palma(win, 250, 444, 55 )
 house = HouseNigga(win, 290, 460, 90)
 
+fire = Fire(win, 200, 460)
+
 
 island = [negr, palma, house]
+island.append(fire)
+
 run = True
 while run:
     pygame.time.delay(50)
