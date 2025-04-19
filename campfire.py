@@ -32,8 +32,8 @@ class Fire:
 
     def recolor(self):
         self.color1 = [random.randint(170, 255), random.randint(200, 235), random.randint(0, 50)]
-        self.color2 = [random.randint(170, 255), random.randint(200, 235), random.randint(0, 50)]
-        self.color3 = [random.randint(170, 255), random.randint(200, 235), random.randint(0, 50)]
+        self.color2 = [random.randint(200, 255), random.randint(150, 155), random.randint(0, 50)]
+        self.color3 = [random.randint(200, 255), random.randint(150, 155), random.randint(0, 50)]
 
     def add_parts(self):
         self.parts.append(Part(self.win, self.x + 10, self.y + 10, random.choice([self.color1, self.color2, self.color3])))
@@ -58,7 +58,10 @@ class Part:
                          (self.x, self.y,
                           5, 5))
     def recolor(self):
-        self.color = [random.randint(170, 255), random.randint(200, 235), random.randint(0, 50)]
+        for i in range(3):
+            self.color[i] -= 1
+            if self.color[i] < 0:
+                self.color[i] = 0
     def update(self):
         self.draw()
         self.recolor()
