@@ -34,4 +34,4 @@ class Palma:
 
         self.recolor()
         self.cordx()
-        
+
