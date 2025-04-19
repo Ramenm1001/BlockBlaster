@@ -16,7 +16,7 @@ class Negr:
                           20, self.tall))
 
     def run(self):
-        if self.d == 1:
+        if self.d == 1:  # куда бежит 1-вправо -1-влево
             self.x += 1
             if self.x > 500:
                 self.d = -1
