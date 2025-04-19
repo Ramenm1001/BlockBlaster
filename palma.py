@@ -5,10 +5,11 @@ class Palma:
         self.y = y
         self.win = win
         self.tall = tall
+        self.color = [252, 169, 3]
 
     def draw(self):
         pygame.draw.rect(self.win,
-                         (252, 169, 3),
+                         self.color,
                          (self.x, self.y,
                           20, self.tall))
         pygame.draw.rect(self.win,
@@ -16,5 +17,16 @@ class Palma:
                          (self.x-10, self.y,
                           50, 20))
 
+    def recolor(self):
+        self.color[2] += 1
+        if self.color[2] == 255:
+
+            self.color[2] = 0
+
+    def cordx(self):
+        self.x -= 1
+
     def update(self):
         self.draw()
+        self.recolor()
+        self.cordx()
