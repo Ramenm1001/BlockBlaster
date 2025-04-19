@@ -25,13 +25,10 @@ class Palma:
 
             self.color[2] = 0
 
-    def cordx(self):
-        self.x -= 1
 
     def update(self):
         self.draw()
         self.recolor()
 
         self.recolor()
-        self.cordx()
 
