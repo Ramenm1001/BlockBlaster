@@ -1,5 +1,5 @@
 import pygame.draw
-class HouseNigga:
+class Background:
     def __init__(self, win, x, y, tall):
         self.win = win
         self.x = x
