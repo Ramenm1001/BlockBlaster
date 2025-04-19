@@ -10,5 +10,5 @@ class HouseNigga:
         pygame.draw.rect(self.win, (170, 100, 15), (self.x, self.y, 100, self.tall))
 
 
-def update(self):
-    self.draw()
+    def update(self):
+        self.draw()
