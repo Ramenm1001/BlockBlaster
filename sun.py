@@ -9,6 +9,7 @@ class Sun:
         self.speed = 1
 
 
+
     def draw(self):
         pygame.draw.rect(self.win,
                          self.color,
