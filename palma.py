@@ -19,6 +19,8 @@ class Palma:
 
     def recolor(self):
         self.color[2] += 1
+    def recolor(self):
+        self.color[2] += 1
         if self.color[2] == 255:
 
             self.color[2] = 0
@@ -28,5 +30,7 @@ class Palma:
 
     def update(self):
         self.draw()
+        self.recolor()
+
         self.recolor()
         self.cordx()
