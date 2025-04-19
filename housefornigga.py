@@ -8,7 +8,8 @@ class HouseNigga:
 
     def draw(self):
         pygame.draw.rect(self.win, (170, 100, 15), (self.x, self.y, 100, self.tall))
-
+        pygame.draw.rect(self.win, (10, 100, 15), (self.x, self.y-10, 10, self.tall))
+    def recolor(self):
 
     def update(self):
         self.draw()
