@@ -27,6 +27,7 @@ class Negr:
 
     def update(self):
         self.draw()
+        self.run()
 
 
 
