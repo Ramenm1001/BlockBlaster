@@ -5,19 +5,20 @@ from housefornigga import HouseNigga
 
 win = pygame.display.set_mode((500, 500))
 negr = Negr(win, 200, 400, 50)
-palma = Palma(win, 250,444,55 )
-house = HouseNigga(win, 290, 460, 100)
+palma = Palma(win, 250, 444, 55 )
+house = HouseNigga(win, 290, 460, 90)
 
 
 island = [negr, palma, house]
 run = True
 while run:
+    pygame.time.delay(50)
     for eve in pygame.event.get():
         if eve.type == pygame.QUIT:
             run = False
 
     win.fill((0, 0, 0))
     for some in island:
-        some.draw()
+        some.update()
     pygame.display.update()
 pygame.quit()
